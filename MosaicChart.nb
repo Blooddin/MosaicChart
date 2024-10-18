@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32725,        781]
-NotebookOptionsPosition[     31175,        744]
-NotebookOutlinePosition[     31598,        761]
-CellTagsIndexPosition[     31555,        758]
+NotebookDataLength[     34607,        785]
+NotebookOptionsPosition[     33287,        752]
+NotebookOutlinePosition[     33711,        769]
+CellTagsIndexPosition[     33668,        766]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -349,17 +349,28 @@ Cell[BoxData[{
        RowBox[{
        "rectanglesWithMetaData", ",", "textXArray", ",", "textYArray"}], 
        "}"}]}]}], "\[IndentingNewLine]", "]"}]}], ";"}]}], "Input",
- CellChangeTimes->CompressedData["
-1:eJwdyksowwEAx/F/o7Yiyw4cPDabskeIPEpJciFFm1kuxLDFVg7MMptGe1Ci
-0TTlIjRprRYHyesgaYbNNpaDR4a2WklTlPD//Q+/Pofft0A+JOmnEQSRQw5K
-BQ09V+2JepvhTA5ljdPD0BLna+DpWqsOOmyqcahPso1wi9k5CZP2uBn6PAoL
-lGbXeGGfW0mZPzf1DivbmF/UHwkRflJTeloqdAc+6LBr3ZoHBUsiHhzlsQph
-y86MEKr1mSJonKeXw6BPS3l5EdXCKk/vGOSuHBohIxIzwZ/QneOa1Cx+W4ZZ
-HIYTqus2KAftv6owaYpdqYPmbdcEfK1tXoBCmfMIGnisY7i6mOGFjyPyCKzY
-99/DXavmCZ6ID14gQ7gXgyW3QdoN6WypLBdKgk0cGFZ9F0Evf7MYdp9Xl8GH
-wN8z5CYGolTf4YpB9qeH8h+E8ur5
-  "],
- CellLabel->"In[44]:=",ExpressionUUID->"19a0bfb3-14e2-41d7-bed0-e330a9cce857"]
+ CellChangeTimes->{{3.937303306098795*^9, 3.937303318265328*^9}, {
+   3.93730345225883*^9, 3.9373034652786283`*^9}, {3.937303506488742*^9, 
+   3.9373035153615227`*^9}, {3.9373035529985943`*^9, 3.937303562908162*^9}, {
+   3.937303599330805*^9, 3.9373036032092037`*^9}, {3.9373041458153477`*^9, 
+   3.937304147240038*^9}, {3.9373044520798483`*^9, 3.937304512478907*^9}, {
+   3.9373045826514072`*^9, 3.937304608345278*^9}, {3.9373046395880957`*^9, 
+   3.9373048122388144`*^9}, {3.93730485736208*^9, 3.9373048645668287`*^9}, {
+   3.93730491630326*^9, 3.937304920546438*^9}, {3.937304976236267*^9, 
+   3.937304979743753*^9}, {3.9373055351501226`*^9, 3.937305547115382*^9}, {
+   3.937305605956559*^9, 3.937305639307621*^9}, {3.937309894838499*^9, 
+   3.937309903228701*^9}, {3.9373100082539167`*^9, 3.937310013163992*^9}, {
+   3.937315679955739*^9, 3.93731579523694*^9}, {3.937315829396914*^9, 
+   3.937315986351306*^9}, {3.937316349229268*^9, 3.937316352566832*^9}, {
+   3.937316432455521*^9, 3.937316547076767*^9}, {3.937316598522974*^9, 
+   3.937316619672817*^9}, {3.937316653916231*^9, 3.937316685817631*^9}, {
+   3.937316886620017*^9, 3.937317090693304*^9}, {3.937317122307046*^9, 
+   3.937317183794413*^9}, {3.937317229254979*^9, 3.937317257743576*^9}, {
+   3.937318687994369*^9, 3.937318691310197*^9}, {3.9373187333857813`*^9, 
+   3.937318733561172*^9}, {3.938268676475786*^9, 3.938268703915428*^9}, 
+   3.938269631852755*^9},
+ CellLabel->
+  "In[294]:=",ExpressionUUID->"19a0bfb3-14e2-41d7-bed0-e330a9cce857"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -378,22 +389,28 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-      "data_List", ",", "observation1_Integer", ",", "observation2_Integer", 
-       ",", 
-       RowBox[{"nTimes_Integer", ":", "100"}], ",", 
-       RowBox[{"widthPadding_Integer", ":", "10"}], ",", 
-       RowBox[{"heightPadding_Integer", ":", "10"}], ",", 
-       RowBox[{"pt_Integer", ":", "11"}], ",", 
-       RowBox[{"offsetX_Integer", ":", "0"}], ",", 
-       RowBox[{"offsetY_Integer", ":", "0"}]}], "}"}], ",", "opts___"}], 
-    "]"}], ":=", 
+      "data_List", ",", "observation1_Integer", ",", "observation2_Integer"}],
+       "}"}], ",", 
+     RowBox[{"OptionsPattern", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"nTimes", "->", "100"}], ",", 
+        RowBox[{"widthPadding", "->", "10"}], ",", 
+        RowBox[{"heightPadding", "->", "10"}], ",", 
+        RowBox[{"pt", "->", "11"}], ",", 
+        RowBox[{"offsetX", "->", "0"}], ",", 
+        RowBox[{"offsetY", "->", "0"}]}], "}"}], "]"}]}], "]"}], ":=", 
+   "\[IndentingNewLine]", 
    RowBox[{"Graphics", "[", 
-    RowBox[{
-     RowBox[{"rectanglesForMosaicChart", "[", 
-      RowBox[{
-      "data", ",", "observation1", ",", "observation2", ",", "nTimes", ",", 
-       "widthPadding", ",", "heightPadding", ",", "pt", ",", "offsetX", ",", 
-       "offsetY"}], "]"}], ",", "opts"}], "]"}]}], ";"}]}], "Input",
+    RowBox[{"rectanglesForMosaicChart", "[", 
+     RowBox[{"data", ",", "observation1", ",", "observation2", ",", 
+      RowBox[{"OptionValue", "[", "nTimes", "]"}], ",", 
+      RowBox[{"OptionValue", "[", "widthPadding", "]"}], ",", 
+      RowBox[{"OptionValue", "[", "heightPadding", "]"}], ",", 
+      RowBox[{"OptionValue", "[", "pt", "]"}], ",", 
+      RowBox[{"OptionValue", "[", "offsetX", "]"}], ",", 
+      RowBox[{"OptionValue", "[", "offsetY", "]"}]}], "]"}], "]"}]}], 
+  ";"}]}], "Input",
  CellChangeTimes->{{3.920631082701046*^9, 3.92063127621939*^9}, {
    3.920632049282827*^9, 3.920632053402419*^9}, {3.9215138258536577`*^9, 
    3.9215138276567*^9}, {3.921918523537722*^9, 3.921918628450996*^9}, {
@@ -446,15 +463,26 @@ Cell[BoxData[{
    3.937316516517404*^9, 3.9373165398663807`*^9}, {3.937317197378861*^9, 
    3.93731720922088*^9}, {3.937317267593916*^9, 3.937317277375136*^9}, {
    3.937317345616907*^9, 3.9373173520914383`*^9}, {3.937318563620522*^9, 
-   3.93731856635142*^9}},
- CellLabel->"In[46]:=",ExpressionUUID->"ae2ae492-8bd6-4339-aa81-c15d2b1ae95d"]
+   3.93731856635142*^9}, {3.937416717702211*^9, 3.9374167656159286`*^9}, {
+   3.938268428635254*^9, 3.9382684395420094`*^9}, {3.938268476314044*^9, 
+   3.938268542256036*^9}, {3.938268574022414*^9, 3.938268611085758*^9}, {
+   3.938268745179576*^9, 3.938268787795315*^9}, {3.938268924968739*^9, 
+   3.9382689398966503`*^9}, {3.9382693209523573`*^9, 
+   3.9382693945123167`*^9}, {3.93826943870203*^9, 3.93826948900185*^9}, {
+   3.938269552601261*^9, 3.938269618458762*^9}, {3.938269659278363*^9, 
+   3.938269689412603*^9}, {3.938269722961421*^9, 3.938269740917534*^9}, {
+   3.938269784599999*^9, 3.938269870678279*^9}, {3.9382699191390343`*^9, 
+   3.9382699278278522`*^9}},
+ CellLabel->
+  "In[296]:=",ExpressionUUID->"ae2ae492-8bd6-4339-aa81-c15d2b1ae95d"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Test", "Subsubsection",
- CellChangeTimes->{{3.9373033539404507`*^9, 
-  3.93730335599296*^9}},ExpressionUUID->"580c5568-7925-48c4-8c89-\
+Cell["Test", "Title",
+ CellChangeTimes->{{3.9373033539404507`*^9, 3.93730335599296*^9}, 
+   3.9382690836890497`*^9},ExpressionUUID->"580c5568-7925-48c4-8c89-\
 518028a6ac06"],
 
 Cell[BoxData[{
@@ -492,18 +520,25 @@ Cell[BoxData[{
  CellChangeTimes->{{3.93731851821737*^9, 3.937318521686253*^9}, {
   3.937318596929653*^9, 3.937318637129363*^9}, {3.9373187421915407`*^9, 
   3.937318762850195*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"c2c96c8a-c275-4c89-ae57-2c5fbac9dbca"],
+ CellLabel->
+  "In[298]:=",ExpressionUUID->"c2c96c8a-c275-4c89-ae57-2c5fbac9dbca"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"MosaicChart", "[", 
   RowBox[{"{", 
-   RowBox[{"myData1", ",", "1", ",", "2"}], "}"}], "]"}]], "Input",
- CellChangeTimes->{{3.937317690449463*^9, 3.937317746106991*^9}, {
-   3.937318526669376*^9, 3.93731852887364*^9}, {3.937318579564558*^9, 
-   3.937318590740655*^9}, 3.93731874436733*^9},
- CellLabel->"In[52]:=",ExpressionUUID->"9a55bba2-6a03-40a9-a052-bfa0a9ee92ad"],
+   RowBox[{"myData2", ",", "1", ",", "2"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9373187694169903`*^9, 3.937318817566078*^9}, {
+   3.938268405521235*^9, 3.938268413953978*^9}, {3.9382684482486267`*^9, 
+   3.938268454783499*^9}, {3.938268616243278*^9, 3.938268654382141*^9}, 
+   3.938268709678008*^9, {3.938269351897798*^9, 3.938269412463786*^9}, {
+   3.938269563959447*^9, 3.93826956720144*^9}, {3.938269626424374*^9, 
+   3.938269626539431*^9}, {3.938269667067691*^9, 3.938269682370932*^9}, {
+   3.938269735754388*^9, 3.938269764162197*^9}, {3.938269931336495*^9, 
+   3.938269931456049*^9}},
+ CellLabel->
+  "In[300]:=",ExpressionUUID->"752770b6-8033-45f0-8cda-f48fefd8f9a3"],
 
 Cell[BoxData[
  GraphicsBox[{{
@@ -511,238 +546,211 @@ Cell[BoxData[
      TagBox[
       TooltipBox[
        RectangleBox[{0, 0}, 
-        NCache[{46, Rational[1200, 23]}, {46, 52.17391304347826}]],
+        NCache[{54, Rational[200, 27]}, {54, 7.407407407407407}]],
        RowBox[{"{", 
-         RowBox[{"\"\:0436\"", ",", "\"\:0434\:0430\"", ",", "24"}], "}"}]],
-      Annotation[#, {"\:0436", "\:0434\:0430", 24}, "Tooltip"]& ]}, 
-    {RGBColor[0.8536794999999999, 0.49055299999999996`, 0.49106399999999994`], 
+         RowBox[{"\"\:0436\"", ",", "4", ",", "4"}], "}"}]],
+      Annotation[#, {"\:0436", 4, 4}, "Tooltip"]& ]}, 
+    {RGBColor[0.8565413333333333, 0.2109831111111111, 0.21189155555555556`], 
      TagBox[
       TooltipBox[
-       RectangleBox[NCache[{0, Rational[1430, 23]}, {0, 62.17391304347826}], {46, 110}],
+       RectangleBox[NCache[{0, Rational[470, 27]}, {0, 17.40740740740741}], 
+        NCache[{54, Rational[820, 27]}, {54, 30.37037037037037}]],
        RowBox[{"{", 
-         RowBox[{"\"\:0436\"", ",", "\"\:043d\:0435\:0442\"", ",", "22"}], 
-         "}"}]],
-      Annotation[#, {"\:0436", "\:043d\:0435\:0442", 22}, "Tooltip"]& ]}, 
-    {RGBColor[0.471412, 0.108766, 0.527016], 
+         RowBox[{"\"\:0436\"", ",", "5", ",", "7"}], "}"}]],
+      Annotation[#, {"\:0436", 5, 7}, "Tooltip"]& ]}, 
+    {RGBColor[0.8557236666666667, 0.2908602222222222, 0.2916551111111111], 
      TagBox[
       TooltipBox[
-       RectangleBox[{56, 0}, 
-        NCache[{110, Rational[1250, 27]}, {110, 46.2962962962963}]],
+       RectangleBox[NCache[{0, Rational[1090, 27]}, {0, 40.370370370370374`}],
+         NCache[{54, Rational[1340, 27]}, {54, 49.629629629629626`}]],
        RowBox[{"{", 
-         RowBox[{"\"\:043c\"", ",", "\"\:0434\:0430\"", ",", "25"}], "}"}]],
-      Annotation[#, {"\:043c", "\:0434\:0430", 25}, "Tooltip"]& ]}, 
-    {RGBColor[0.660706, 0.479383, 0.688508], 
+         RowBox[{"\"\:0436\"", ",", "6", ",", "5"}], "}"}]],
+      Annotation[#, {"\:0436", 6, 5}, "Tooltip"]& ]}, 
+    {RGBColor[0.8549059999999999, 0.3707373333333333, 0.3714186666666667], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{0, Rational[1610, 27]}, {0, 59.629629629629626`}],
+         NCache[{54, Rational[1910, 27]}, {54, 70.74074074074075}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:0436\"", ",", "7", ",", "6"}], "}"}]],
+      Annotation[#, {"\:0436", 7, 6}, "Tooltip"]& ]}, 
+    {RGBColor[0.8540883333333333, 0.4506144444444444, 0.45118222222222215`], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{0, Rational[2180, 27]}, {0, 80.74074074074075}], 
+        NCache[{54, Rational[2380, 27]}, {54, 88.14814814814815}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:0436\"", ",", "8", ",", "4"}], "}"}]],
+      Annotation[#, {"\:0436", 8, 4}, "Tooltip"]& ]}, 
+    {RGBColor[0.8532706666666666, 0.5304915555555556, 0.5309457777777777], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{0, Rational[2650, 27]}, {0, 98.14814814814815}], 
+        NCache[{54, Rational[2800, 27]}, {54, 103.70370370370371`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:0436\"", ",", "9", ",", "3"}], "}"}]],
+      Annotation[#, {"\:0436", 9, 3}, "Tooltip"]& ]}, 
+    {RGBColor[0.852453, 0.6103686666666666, 0.6107093333333333], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{0, Rational[3070, 27]}, {0, 113.70370370370371`}],
+         NCache[{54, Rational[3320, 27]}, {54, 122.96296296296296`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:0436\"", ",", "10", ",", "5"}], "}"}]],
+      Annotation[#, {"\:0436", 10, 5}, "Tooltip"]& ]}, 
+    {RGBColor[0.8516353333333333, 0.6902457777777777, 0.6904728888888889], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{0, Rational[3590, 27]}, {0, 132.96296296296296`}],
+         NCache[{54, Rational[4040, 27]}, {54, 149.62962962962962`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:0436\"", ",", "11", ",", "9"}], "}"}]],
+      Annotation[#, {"\:0436", 11, 9}, "Tooltip"]& ]}, 
+    {RGBColor[0.8508176666666667, 0.7701228888888887, 0.7702364444444444], 
      TagBox[
       TooltipBox[
        RectangleBox[
-        NCache[{56, Rational[1520, 27]}, {56, 56.2962962962963}], {110, 110}],
+        NCache[{0, Rational[4310, 27]}, {0, 159.62962962962962`}], {54, 180}],
        
        RowBox[{"{", 
-         RowBox[{"\"\:043c\"", ",", "\"\:043d\:0435\:0442\"", ",", "29"}], 
-         "}"}]],
-      Annotation[#, {"\:043c", "\:043d\:0435\:0442", 29}, "Tooltip"]& ]}}, {
-    InsetBox[
-     StyleBox["\<\"\:0436\"\>",
-      StripOnInput->False,
-      FontSize->11], {23, -5}], InsetBox[
-     StyleBox["\<\"\:043c\"\>",
-      StripOnInput->False,
-      FontSize->11], {83, -5}]}, {InsetBox[
-     StyleBox["\<\"\:0434\:0430\"\>",
-      StripOnInput->False,
-      FontSize->11], 
-     NCache[{-5, Rational[600, 23]}, {-5, 26.08695652173913}]], InsetBox[
-     StyleBox["\<\"\:043d\:0435\:0442\"\>",
-      StripOnInput->False,
-      FontSize->11], 
-     NCache[{-5, Rational[1980, 23]}, {-5, 86.08695652173913}]]}}]], "Output",\
-
- CellChangeTimes->{{3.937318581572228*^9, 3.9373185924376783`*^9}, 
-   3.937318639567093*^9, {3.9373186966149282`*^9, 3.937318699441723*^9}, {
-   3.937318735503409*^9, 3.9373187474904537`*^9}},
- CellLabel->"Out[52]=",ExpressionUUID->"9f2db9c9-fa48-4598-8082-d0c9aefa2520"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"MosaicChart", "[", 
-  RowBox[{"{", 
-   RowBox[{"myData2", ",", "2", ",", "1"}], "}"}], "]"}]], "Input",
- CellChangeTimes->{{3.9373187694169903`*^9, 3.937318817566078*^9}},
- CellLabel->"In[58]:=",ExpressionUUID->"752770b6-8033-45f0-8cda-f48fefd8f9a3"],
-
-Cell[BoxData[
- GraphicsBox[{{
-    {RGBColor[0.857359, 0.131106, 0.132128], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[{0, 0}, 
-        NCache[{11, Rational[600, 11]}, {11, 54.54545454545455}]],
-       RowBox[{"{", 
-         RowBox[{"4", ",", "\"\:0436\"", ",", "6"}], "}"}]],
-      Annotation[#, {4, "\:0436", 6}, "Tooltip"]& ]}, 
-    {RGBColor[0.8536794999999999, 0.49055299999999996`, 0.49106399999999994`], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[NCache[{0, Rational[710, 11]}, {0, 64.54545454545455}], {11, 110}],
-       RowBox[{"{", 
-         RowBox[{"4", ",", "\"\:043c\"", ",", "5"}], "}"}]],
-      Annotation[#, {4, "\:043c", 5}, "Tooltip"]& ]}, 
-    {RGBColor[0.902853, 0.453964, 0.192014], 
-     TagBox[
-      TooltipBox[RectangleBox[{21, 0}, {31, 40}],
-       RowBox[{"{", 
-         RowBox[{"5", ",", "\"\:0436\"", ",", "4"}], "}"}]],
-      Annotation[#, {5, "\:0436", 4}, "Tooltip"]& ]}, 
-    {RGBColor[0.8764265, 0.651982, 0.521007], 
-     TagBox[
-      TooltipBox[RectangleBox[{21, 50}, {31, 110}],
-       RowBox[{"{", 
-         RowBox[{"5", ",", "\"\:043c\"", ",", "6"}], "}"}]],
-      Annotation[#, {5, "\:043c", 6}, "Tooltip"]& ]}, 
-    {RGBColor[0.863512, 0.670771, 0.236564], 
-     TagBox[
-      TooltipBox[RectangleBox[{41, 0}, {55, 50}],
-       RowBox[{"{", 
-         RowBox[{"6", ",", "\"\:0436\"", ",", "7"}], "}"}]],
-      Annotation[#, {6, "\:0436", 7}, "Tooltip"]& ]}, 
-    {RGBColor[0.856756, 0.7603854999999999, 0.543282], 
-     TagBox[
-      TooltipBox[RectangleBox[{41, 60}, {55, 110}],
-       RowBox[{"{", 
-         RowBox[{"6", ",", "\"\:043c\"", ",", "7"}], "}"}]],
-      Annotation[#, {6, "\:043c", 7}, "Tooltip"]& ]}, 
-    {RGBColor[0.705038, 0.742591, 0.299167], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[{65, 0}, NCache[{73, Rational[125, 2]}, {73, 62.5}]],
-       RowBox[{"{", 
-         RowBox[{"7", ",", "\"\:0436\"", ",", "5"}], "}"}]],
-      Annotation[#, {7, "\:0436", 5}, "Tooltip"]& ]}, 
-    {RGBColor[0.7775190000000001, 0.7962955, 0.5745834999999999], 
-     TagBox[
-      TooltipBox[RectangleBox[NCache[{65, Rational[145, 2]}, {65, 72.5}], {73, 110}],
-       RowBox[{"{", 
-         RowBox[{"7", ",", "\"\:043c\"", ",", "3"}], "}"}]],
-      Annotation[#, {7, "\:043c", 3}, "Tooltip"]& ]}, 
-    {RGBColor[0.513417, 0.72992, 0.440682], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[{83, 0}, 
-        NCache[{92, Rational[200, 3]}, {92, 66.66666666666667}]],
-       RowBox[{"{", 
-         RowBox[{"8", ",", "\"\:0436\"", ",", "6"}], "}"}]],
-      Annotation[#, {8, "\:0436", 6}, "Tooltip"]& ]}, 
-    {RGBColor[0.6817085, 0.78996, 0.6453409999999999], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[NCache[{83, Rational[230, 3]}, {83, 76.66666666666667}], {92, 110}],
-       RowBox[{"{", 
-         RowBox[{"8", ",", "\"\:043c\"", ",", "3"}], "}"}]],
-      Annotation[#, {8, "\:043c", 3}, "Tooltip"]& ]}, 
-    {RGBColor[0.36048, 0.655759, 0.645692], 
-     TagBox[
-      TooltipBox[RectangleBox[{102, 0}, {112, 60}],
-       RowBox[{"{", 
-         RowBox[{"9", ",", "\"\:0436\"", ",", "6"}], "}"}]],
-      Annotation[#, {9, "\:0436", 6}, "Tooltip"]& ]}, 
-    {RGBColor[0.60524, 0.7528794999999999, 0.747846], 
-     TagBox[
-      TooltipBox[RectangleBox[{102, 70}, {112, 110}],
-       RowBox[{"{", 
-         RowBox[{"9", ",", "\"\:043c\"", ",", "4"}], "}"}]],
-      Annotation[#, {9, "\:043c", 4}, "Tooltip"]& ]}, 
-    {RGBColor[0.266122, 0.486664, 0.802529], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[{122, 0}, 
-        NCache[{135, Rational[500, 13]}, {135, 38.46153846153846}]],
-       RowBox[{"{", 
-         RowBox[{"10", ",", "\"\:0436\"", ",", "5"}], "}"}]],
-      Annotation[#, {10, "\:0436", 5}, "Tooltip"]& ]}, 
-    {RGBColor[0.5580609999999999, 0.6683319999999999, 0.8262645], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[
-        NCache[{122, Rational[630, 13]}, {122, 48.46153846153846}], {135, 110}],
-       RowBox[{"{", 
-         RowBox[{"10", ",", "\"\:043c\"", ",", "8"}], "}"}]],
-      Annotation[#, {10, "\:043c", 8}, "Tooltip"]& ]}, 
-    {RGBColor[0.250728, 0.225386, 0.769152], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[{145, 0}, 
-        NCache[{158, Rational[700, 13]}, {158, 53.84615384615385}]],
-       RowBox[{"{", 
-         RowBox[{"11", ",", "\"\:0436\"", ",", "7"}], "}"}]],
-      Annotation[#, {11, "\:0436", 7}, "Tooltip"]& ]}, 
-    {RGBColor[0.5503640000000001, 0.537693, 0.809576], 
-     TagBox[
-      TooltipBox[
-       RectangleBox[
-        NCache[{145, Rational[830, 13]}, {145, 63.84615384615385}], {158, 110}],
-       RowBox[{"{", 
-         RowBox[{"11", ",", "\"\:043c\"", ",", "6"}], "}"}]],
-      Annotation[#, {11, "\:043c", 6}, "Tooltip"]& ]}, 
+         RowBox[{"\"\:0436\"", ",", "12", ",", "11"}], "}"}]],
+      Annotation[#, {"\:0436", 12, 11}, "Tooltip"]& ]}, 
     {RGBColor[0.471412, 0.108766, 0.527016], 
      TagBox[
       TooltipBox[
-       RectangleBox[{168, 0}, 
-        NCache[{180, Rational[200, 3]}, {180, 66.66666666666667}]],
+       RectangleBox[{64, 0}, 
+        NCache[{110, Rational[200, 23]}, {110, 8.695652173913043}]],
        RowBox[{"{", 
-         RowBox[{"12", ",", "\"\:0436\"", ",", "8"}], "}"}]],
-      Annotation[#, {12, "\:0436", 8}, "Tooltip"]& ]}, 
-    {RGBColor[0.660706, 0.479383, 0.688508], 
+         RowBox[{"\"\:043c\"", ",", "4", ",", "4"}], "}"}]],
+      Annotation[#, {"\:043c", 4, 4}, "Tooltip"]& ]}, 
+    {RGBColor[0.5134773333333333, 0.1911253333333333, 0.5629031111111111], 
      TagBox[
       TooltipBox[
        RectangleBox[
-        NCache[{168, Rational[230, 3]}, {168, 76.66666666666667}], {180, 110}],
+        NCache[{64, Rational[430, 23]}, {64, 18.695652173913043`}], 
+        NCache[{110, Rational[680, 23]}, {110, 29.565217391304348`}]],
        RowBox[{"{", 
-         RowBox[{"12", ",", "\"\:043c\"", ",", "4"}], "}"}]],
-      Annotation[#, {12, "\:043c", 4}, "Tooltip"]& ]}}, {InsetBox[
-     StyleBox["4",
-      StripOnInput->False,
-      FontSize->11], NCache[{Rational[11, 2], -5}, {5.5, -5}]], InsetBox[
-     StyleBox["5",
-      StripOnInput->False,
-      FontSize->11], {26, -5}], InsetBox[
-     StyleBox["6",
-      StripOnInput->False,
-      FontSize->11], {48, -5}], InsetBox[
-     StyleBox["7",
-      StripOnInput->False,
-      FontSize->11], {69, -5}], InsetBox[
-     StyleBox["8",
-      StripOnInput->False,
-      FontSize->11], NCache[{Rational[175, 2], -5}, {87.5, -5}]], InsetBox[
-     StyleBox["9",
-      StripOnInput->False,
-      FontSize->11], {107, -5}], InsetBox[
-     StyleBox["10",
-      StripOnInput->False,
-      FontSize->11], NCache[{Rational[257, 2], -5}, {128.5, -5}]], InsetBox[
-     StyleBox["11",
-      StripOnInput->False,
-      FontSize->11], NCache[{Rational[303, 2], -5}, {151.5, -5}]], InsetBox[
-     StyleBox["12",
-      StripOnInput->False,
-      FontSize->11], {174, -5}]}, {InsetBox[
+         RowBox[{"\"\:043c\"", ",", "5", ",", "5"}], "}"}]],
+      Annotation[#, {"\:043c", 5, 5}, "Tooltip"]& ]}, 
+    {RGBColor[0.5555426666666666, 0.27348466666666665`, 0.5987902222222222], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{64, Rational[910, 23]}, {64, 39.56521739130435}], 
+        NCache[{110, Rational[1160, 23]}, {110, 50.43478260869565}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "6", ",", "5"}], "}"}]],
+      Annotation[#, {"\:043c", 6, 5}, "Tooltip"]& ]}, 
+    {RGBColor[0.5976079999999999, 0.35584399999999994`, 0.6346773333333333], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{64, Rational[1390, 23]}, {64, 60.43478260869565}],
+         NCache[{110, Rational[1690, 23]}, {110, 73.47826086956522}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "7", ",", "6"}], "}"}]],
+      Annotation[#, {"\:043c", 7, 6}, "Tooltip"]& ]}, 
+    {RGBColor[0.6396733333333333, 0.4382033333333333, 0.6705644444444444], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{64, Rational[1920, 23]}, {64, 83.47826086956522}],
+         NCache[{110, Rational[2020, 23]}, {110, 87.82608695652173}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "8", ",", "2"}], "}"}]],
+      Annotation[#, {"\:043c", 8, 2}, "Tooltip"]& ]}, 
+    {RGBColor[0.6817386666666667, 0.5205626666666666, 0.7064515555555556], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[NCache[{64, Rational[2250, 23]}, {64, 97.82608695652173}],
+         NCache[{110, Rational[2650, 23]}, {110, 115.21739130434783`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "9", ",", "8"}], "}"}]],
+      Annotation[#, {"\:043c", 9, 8}, "Tooltip"]& ]}, 
+    {RGBColor[0.7238039999999999, 0.602922, 0.7423386666666667], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[
+        NCache[{64, Rational[2880, 23]}, {64, 125.21739130434783`}], 
+        NCache[{110, Rational[3130, 23]}, {110, 136.08695652173913`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "10", ",", "5"}], "}"}]],
+      Annotation[#, {"\:043c", 10, 5}, "Tooltip"]& ]}, 
+    {RGBColor[0.7658693333333333, 0.6852813333333333, 0.7782257777777778], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[
+        NCache[{64, Rational[3360, 23]}, {64, 146.08695652173913`}], 
+        NCache[{110, Rational[3710, 23]}, {110, 161.30434782608697`}]],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "11", ",", "7"}], "}"}]],
+      Annotation[#, {"\:043c", 11, 7}, "Tooltip"]& ]}, 
+    {RGBColor[0.8079346666666667, 0.7676406666666666, 0.8141128888888889], 
+     TagBox[
+      TooltipBox[
+       RectangleBox[
+        NCache[{64, Rational[3940, 23]}, {64, 171.30434782608697`}], {110, 180}],
+       RowBox[{"{", 
+         RowBox[{"\"\:043c\"", ",", "12", ",", "4"}], "}"}]],
+      Annotation[#, {"\:043c", 12, 4}, "Tooltip"]& ]}}, {InsetBox[
      StyleBox["\<\"\:0436\"\>",
       StripOnInput->False,
-      FontSize->11], 
-     NCache[{-5, Rational[300, 11]}, {-5, 27.272727272727273`}]], InsetBox[
+      FontSize->11], {27, -5}], InsetBox[
      StyleBox["\<\"\:043c\"\>",
       StripOnInput->False,
+      FontSize->11], {87, -5}]}, {InsetBox[
+     StyleBox["4",
+      StripOnInput->False,
       FontSize->11], 
-     NCache[{-5, Rational[960, 11]}, {-5, 87.27272727272727}]]}}]], "Output",
- CellChangeTimes->{{3.93731876986479*^9, 3.937318817969479*^9}},
- CellLabel->"Out[58]=",ExpressionUUID->"bed927b9-40d8-400f-8bca-8cc7d49832a3"]
-}, Open  ]]
+     NCache[{-5, Rational[100, 27]}, {-5, 3.7037037037037037`}]], InsetBox[
+     StyleBox["5",
+      StripOnInput->False,
+      FontSize->11], NCache[{-5, Rational[215, 9]}, {-5, 23.88888888888889}]],
+     InsetBox[
+     StyleBox["6",
+      StripOnInput->False,
+      FontSize->11], {-5, 45}], InsetBox[
+     StyleBox["7",
+      StripOnInput->False,
+      FontSize->11], 
+     NCache[{-5, Rational[1760, 27]}, {-5, 65.18518518518519}]], InsetBox[
+     StyleBox["8",
+      StripOnInput->False,
+      FontSize->11], NCache[{-5, Rational[760, 9]}, {-5, 84.44444444444444}]],
+     InsetBox[
+     StyleBox["9",
+      StripOnInput->False,
+      FontSize->11], 
+     NCache[{-5, Rational[2725, 27]}, {-5, 100.92592592592592`}]], InsetBox[
+     StyleBox["10",
+      StripOnInput->False,
+      FontSize->11], 
+     NCache[{-5, Rational[355, 3]}, {-5, 118.33333333333333`}]], InsetBox[
+     StyleBox["11",
+      StripOnInput->False,
+      FontSize->11], 
+     NCache[{-5, Rational[3815, 27]}, {-5, 141.2962962962963}]], InsetBox[
+     StyleBox["12",
+      StripOnInput->False,
+      FontSize->11], 
+     NCache[{-5, Rational[4585, 27]}, {-5, 169.8148148148148}]]}},
+  ImageMargins->0.,
+  ImageSize->Automatic,
+  ImageSizeRaw->Automatic]], "Output",
+ CellChangeTimes->{{3.93731876986479*^9, 3.937318817969479*^9}, 
+   3.937400014075439*^9, 3.937416732862903*^9, 3.937416769092629*^9, 
+   3.9382682449676733`*^9, {3.938268388146641*^9, 3.938268414613111*^9}, {
+   3.93826844532155*^9, 3.938268455373879*^9}, {3.9382685448978167`*^9, 
+   3.938268654924432*^9}, {3.938268711028019*^9, 3.9382687176459007`*^9}, {
+   3.938268768085688*^9, 3.938268794090129*^9}, 3.9382689119523373`*^9, 
+   3.938268942506069*^9, {3.938269349744597*^9, 3.93826944890134*^9}, 
+   3.9382694818939*^9, {3.938269556694409*^9, 3.938269587675129*^9}, {
+   3.938269619794125*^9, 3.938269690310272*^9}, {3.938269732490305*^9, 
+   3.938269875062316*^9}, {3.938269928504925*^9, 3.938269932063938*^9}, 
+   3.9382700305945663`*^9},
+ CellLabel->
+  "Out[300]=",ExpressionUUID->"fe07872a-5eaf-46bd-9c4c-b0ca4a76df69"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1680, 922},
+WindowSize->{Full, Full},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"13.3 for Mac OS X x86 (64-bit) (July 24, 2023)",
@@ -764,23 +772,19 @@ Cell[CellGroupData[{
 Cell[580, 22, 202, 4, 123, "Title",ExpressionUUID->"d01bc8ec-4788-40aa-96ba-551110646d26"],
 Cell[CellGroupData[{
 Cell[807, 30, 175, 3, 56, "Subsubsection",ExpressionUUID->"ce917c02-e18a-44a1-b5c8-d25fbd3bce4f"],
-Cell[985, 35, 13760, 326, 2110, "Input",ExpressionUUID->"19a0bfb3-14e2-41d7-bed0-e330a9cce857"]
+Cell[985, 35, 14693, 337, 2110, "Input",ExpressionUUID->"19a0bfb3-14e2-41d7-bed0-e330a9cce857"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14782, 366, 162, 3, 56, "Subsubsection",ExpressionUUID->"8f75a605-120c-4362-beff-fa6a161b7514"],
-Cell[14947, 371, 4946, 78, 189, "Input",ExpressionUUID->"ae2ae492-8bd6-4339-aa81-c15d2b1ae95d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[19930, 454, 156, 3, 56, "Subsubsection",ExpressionUUID->"580c5568-7925-48c4-8c89-518028a6ac06"],
-Cell[20089, 459, 1278, 35, 99, "Input",ExpressionUUID->"c2c96c8a-c275-4c89-ae57-2c5fbac9dbca"],
-Cell[CellGroupData[{
-Cell[21392, 498, 392, 7, 37, "Input",ExpressionUUID->"9a55bba2-6a03-40a9-a052-bfa0a9ee92ad"],
-Cell[21787, 507, 2304, 55, 468, "Output",ExpressionUUID->"9f2db9c9-fa48-4598-8082-d0c9aefa2520"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[24128, 567, 274, 5, 37, "Input",ExpressionUUID->"752770b6-8033-45f0-8cda-f48fefd8f9a3"],
-Cell[24405, 574, 6730, 165, 307, "Output",ExpressionUUID->"bed927b9-40d8-400f-8bca-8cc7d49832a3"]
+Cell[15715, 377, 162, 3, 56, "Subsubsection",ExpressionUUID->"8f75a605-120c-4362-beff-fa6a161b7514"],
+Cell[15880, 382, 5856, 94, 234, "Input",ExpressionUUID->"ae2ae492-8bd6-4339-aa81-c15d2b1ae95d"]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21785, 482, 173, 3, 123, "Title",ExpressionUUID->"580c5568-7925-48c4-8c89-518028a6ac06"],
+Cell[21961, 487, 1282, 36, 99, "Input",ExpressionUUID->"c2c96c8a-c275-4c89-ae57-2c5fbac9dbca"],
+Cell[CellGroupData[{
+Cell[23268, 527, 743, 13, 37, "Input",ExpressionUUID->"752770b6-8033-45f0-8cda-f48fefd8f9a3"],
+Cell[24014, 542, 9245, 206, 561, "Output",ExpressionUUID->"fe07872a-5eaf-46bd-9c4c-b0ca4a76df69"]
 }, Open  ]]
 }, Open  ]]
 }
